@@ -2,54 +2,67 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col gap-5 bg-gray-400 text-white mt-96 w-full">
-      <div className="flex justify-between px-20 py-10">
-        <div className="text-2xl flex flex-col gap-2">
-          <h2 className="text-5xl font-bold">
-            Car<span className="text-black">Rental.</span>
+    <footer className="bg-white text-gray-700 w-full mt-40 border-t-2 border-t-gray-300">
+      <div className="flex flex-col md:flex-row justify-between gap-10 px-6 md:px-20 py-10">
+        {/* Brand Info */}
+        <div className="text-lg md:text-2xl flex flex-col gap-2 max-w-md">
+          <h2 className="text-3xl md:text-5xl font-bold text-black">
+            Car<span className="text-blue-700">Rental.</span>
           </h2>
           <p>Your one-stop solution for car rentals.</p>
           <p>Contact us for more information.</p>
           <p>Phone: +1234567890</p>
         </div>
-        <div className="flex flex-col gap-2 text-2xl font-semibold">
-          <p>Quick Links</p>
-          <li className="hover:text-black hover:cursor-pointer hover:-translate-y-0.5 transition-transform">
-            Home
-          </li>
-          <li className="hover:text-black hover:cursor-pointer hover:-translate-y-0.5 transition-transform">
-            About
-          </li>
-          <li className="hover:text-black hover:cursor-pointer hover:-translate-y-0.5 transition-transform">
-            Explore
-          </li>
+
+        {/* Quick Links */}
+        <div className="text-lg md:text-2xl font-semibold">
+          <p className="mb-2">Quick Links</p>
+          <ul className="flex flex-col gap-2">
+            <li className="hover:text-black hover:cursor-pointer transition-transform hover:-translate-y-0.5">
+              Home
+            </li>
+            <li className="hover:text-black hover:cursor-pointer transition-transform hover:-translate-y-0.5">
+              About
+            </li>
+            <li className="hover:text-black hover:cursor-pointer transition-transform hover:-translate-y-0.5">
+              Explore
+            </li>
+          </ul>
         </div>
-        <div className="flex flex-col gap-2 text-2xl font-semibold">
-          <p>Our Services</p>
-          <li className="hover:text-black hover:cursor-pointer hover:-translate-y-0.5 transition-transform">
-            Corporate travels
-          </li>
-          <li className="hover:text-black hover:cursor-pointer hover:-translate-y-0.5 transition-transform">
-            Special Events
-          </li>
-          <li className="hover:text-black hover:cursor-pointer hover:-translate-y-0.5 transition-transform">
-            Airport Transport
-          </li>
+
+        {/* Services */}
+        <div className="text-lg md:text-2xl font-semibold">
+          <p className="mb-2">Our Services</p>
+          <ul className="flex flex-col gap-2">
+            <li className="hover:text-black hover:cursor-pointer transition-transform hover:-translate-y-0.5">
+              Corporate travels
+            </li>
+            <li className="hover:text-black hover:cursor-pointer transition-transform hover:-translate-y-0.5">
+              Special Events
+            </li>
+            <li className="hover:text-black hover:cursor-pointer transition-transform hover:-translate-y-0.5">
+              Airport Transport
+            </li>
+          </ul>
         </div>
       </div>
-      <hr />
-      <div className="flex justify-between text-2xl font-semibold px-20 py-5">
+
+      <hr className="border-gray-300 mx-10" />
+
+      {/* Bottom Section */}
+      <div className="flex flex-col md:flex-row justify-between items-center gap-5 text-center md:text-left text-lg md:text-2xl font-semibold px-6 md:px-20 py-6">
         <p>
-          © 2023 Car<span className="text-black">Rental.</span> All rights
-          reserved.
+          © {new Date().getFullYear()} <span className="text-black"> Car
+          <span className="text-blue-700">Rental.</span></span> All rights reserved.
         </p>
-        <p className="flex gap-10 text-4xl">
-          <i className="fa-brands fa-facebook hover:text-black hover:cursor-pointer hover:-translate-y-0.5 transition-transform"></i>
-          <i className="fa-brands fa-x-twitter hover:text-black hover:cursor-pointer hover:-translate-y-0.5 transition-transform"></i>
-          <i className="fa-brands fa-instagram hover:text-black hover:cursor-pointer hover:-translate-y-0.5 transition-transform"></i>
-        </p>
+
+        <div className="flex gap-8 text-3xl">
+          <i className="fa-brands fa-facebook hover:text-black cursor-pointer hover:-translate-y-0.5 transition-transform"></i>
+          <i className="fa-brands fa-x-twitter hover:text-black cursor-pointer hover:-translate-y-0.5 transition-transform"></i>
+          <i className="fa-brands fa-instagram hover:text-black cursor-pointer hover:-translate-y-0.5 transition-transform"></i>
+        </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
