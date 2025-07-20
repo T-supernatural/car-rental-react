@@ -1,10 +1,13 @@
 import React from 'react'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
-    <div className="text-5xl text-teal-500 bg-amber-300 capitalize">
-      My name is tinuade michael
-    </div>
+    <>
+      <Navbar />
+      <Footer />
+    </>
   )
 }
 
