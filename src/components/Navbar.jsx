@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -7,18 +8,18 @@ const Navbar = () => {
         Car<span className="text-blue-700">Rental.</span>
       </div>
       <ul className="hidden md:flex space-x-16 font-semibold text-2xl items-center text-gray-400">
-        <li className="hover:text-black hover:cursor-pointer hover:-translate-y-0.5 transition-transform">
+        <Link to={'/'} className="hover:text-black hover:cursor-pointer hover:-translate-y-0.5 transition-transform">
           Home
-        </li>
-        <li className="hover:text-black hover:cursor-pointer hover:-translate-y-0.5 transition-transform">
+        </Link>
+        <Link className="hover:text-black hover:cursor-pointer hover:-translate-y-0.5 transition-transform">
           About
-        </li>
-        <li className="hover:text-black hover:cursor-pointer hover:-translate-y-0.5 transition-transform">
+        </Link>
+        <Link className="hover:text-black hover:cursor-pointer hover:-translate-y-0.5 transition-transform">
           Explore
-        </li>
-        <a className="bg-blue-700 text-white px-3 py-2 rounded-xl hover:bg-blue-800 hover:cursor-pointer text-center content-center">
+        </Link>
+        <Link to={'/contact'} className="bg-blue-700 text-white px-3 py-2 rounded-xl hover:bg-blue-800 hover:cursor-pointer text-center content-center">
           Contact
-        </a>
+        </Link>
       </ul>
       <div className="md:hidden flex items-center">
         <button className="text-3xl hover:cursor-pointer hover:text-black">☰</button>

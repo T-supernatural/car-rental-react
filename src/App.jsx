@@ -6,12 +6,15 @@ import { Route, Routes } from "react-router-dom";
 import Contact from './page/Contact';
 
 
+
 const App = () => {
   return (
     <>
       <Navbar />
-      {/* <Homepage /> */}
-      <Contact />
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
       <Footer />
     </>
   )
