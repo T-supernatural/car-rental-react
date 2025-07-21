@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-white text-gray-700 w-full mt-40 border-t-2 border-t-gray-300">
+    <footer className="bg-white text-gray-500 w-full mt-40 border-t-2 border-t-gray-300">
       <div className="flex flex-col md:flex-row justify-between gap-10 px-6 md:px-20 py-10">
         {/* Brand Info */}
         <div className="text-lg md:text-2xl flex flex-col gap-2 max-w-md">
@@ -14,33 +14,31 @@ const Footer = () => {
           <p>Phone: +1234567890</p>
         </div>
 
-        {/* Quick Links */}
         <div className="text-lg md:text-2xl font-semibold">
-          <p className="mb-2">Quick Links</p>
+          <p className="mb-2 text-black">Quick Links</p>
           <ul className="flex flex-col gap-2">
-            <li className="hover:text-black hover:cursor-pointer transition-transform hover:-translate-y-0.5">
+            <li className="hover:text-black hover:cursor-pointer transition-transform hover:translate-x-0.5">
               Home
             </li>
-            <li className="hover:text-black hover:cursor-pointer transition-transform hover:-translate-y-0.5">
+            <li className="hover:text-black hover:cursor-pointer transition-transform hover:translate-x-0.5">
               About
             </li>
-            <li className="hover:text-black hover:cursor-pointer transition-transform hover:-translate-y-0.5">
+            <li className="hover:text-black hover:cursor-pointer transition-transform hover:translate-x-0.5">
               Explore
             </li>
           </ul>
         </div>
 
-        {/* Services */}
         <div className="text-lg md:text-2xl font-semibold">
-          <p className="mb-2">Our Services</p>
+          <p className="mb-2 text-black">Our Services</p>
           <ul className="flex flex-col gap-2">
-            <li className="hover:text-black hover:cursor-pointer transition-transform hover:-translate-y-0.5">
+            <li className="hover:text-black hover:cursor-pointer transition-transform hover:translate-x-0.5">
               Corporate travels
             </li>
-            <li className="hover:text-black hover:cursor-pointer transition-transform hover:-translate-y-0.5">
+            <li className="hover:text-black hover:cursor-pointer transition-transform hover:translate-x-0.5">
               Special Events
             </li>
-            <li className="hover:text-black hover:cursor-pointer transition-transform hover:-translate-y-0.5">
+            <li className="hover:text-black hover:cursor-pointer transition-transform hover:translate-x-0.5">
               Airport Transport
             </li>
           </ul>

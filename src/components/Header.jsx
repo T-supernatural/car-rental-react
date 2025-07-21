@@ -27,8 +27,8 @@ const Header = () => {
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-[url(slide.image)] bg-opacity-50 flex flex-col items-center justify-center text-white text-center p-4">
-            <h2 className="text-4xl md:text-6xl font-bold mb-4">{slide.title}</h2>
-            <p className="text-lg md:text-2xl">{slide.text}</p>
+            <h2 className="text-6xl md:text-7xl font-bold mb-4">{slide.title}</h2>
+            <p className="text-xl md:text-2xl">{slide.text}</p>
           </div>
         </div>
       ))}
